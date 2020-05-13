@@ -98,10 +98,10 @@ CREATE TABLE Compra (
     data DATE NOT NULL,
     hora TIME NOT NULL,
     total REAL NOT NULL,
-    idCliente INTEGER,
+    nifCliente INTEGER,
     CONSTRAINT compra_pk PRIMARY KEY (idCompra),
     CONSTRAINT compra_total_check CHECK (total > 0),
-    CONSTRAINT compra_cliente_fk FOREIGN KEY (idCliente) REFERENCES Cliente (idCliente) ON DELETE SET NULL ON UPDATE CASCADE
+    CONSTRAINT compra_cliente_fk FOREIGN KEY (nifCliente) REFERENCES Cliente (nif) ON DELETE SET NULL ON UPDATE CASCADE
 );
 
 
@@ -173,9 +173,8 @@ CREATE TABLE Pessoa (
 DROP TABLE IF EXISTS Cliente;
 
 CREATE TABLE Cliente (
-    idCliente INTEGER UNIQUE NOT NULL,
     nif INTEGER,
-    CONSTRAINT cliente_pk PRIMARY KEY (idCliente),
+    CONSTRAINT cliente_pk PRIMARY KEY (nif),
     CONSTRAINT cliente_nif_fk FOREIGN KEY (nif) REFERENCES Pessoa (nif) ON DELETE SET NULL ON UPDATE CASCADE
 );
 
