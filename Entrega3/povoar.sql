@@ -6,14 +6,14 @@ INSERT INTO Pessoa VALUES (222222222, 'Kia Dunlap', '1990-12-25', 932222222, 'ki
 INSERT INTO Pessoa VALUES (333333333, 'Renzo Hodge', '1966-03-13', 933333333, 'renzohodge@gmail.com');
 INSERT INTO Pessoa VALUES (444444444, 'Margaret Dixon', '1978-10-03', 934444444, 'margaretdixon@gmail.com');
 INSERT INTO Pessoa VALUES (555555555, 'Aiysha Beil', '1969-02-28', 935555555, 'aiyshabeil@gmail.com');
-INSERT INTO Pessoa VALUES (666666666, 'Kaine Hudson', '1987-05-12', 936666666, 'kainehudson@gmail.com');
-INSERT INTO Pessoa VALUES (777777777, 'Mercy Williamson', '1999-07-21', 937777777, 'mercywilliamson@gmail.com');
-INSERT INTO Pessoa VALUES (888888888, 'Quinn Cousins', '1979-01-31', 938888888, 'quinncousins2gmail.com');
-INSERT INTO Pessoa VALUES (999999999, 'Chloe-Louise Garner', '1990-11-13', 939999999, 'chloelouisegarner@gmail.com');
-INSERT INTO Pessoa VALUES (111111112, 'Mariella Morales', '1980-07-20', 911111111, 'mariellamorales@gmail.com');
+INSERT INTO Pessoa VALUES (666666666, 'Kaine Hudson', '1930-05-12', 936666666, 'kainehudson@gmail.com');
+INSERT INTO Pessoa VALUES (777777777, 'Mercy Williamson', '1942-07-21', 937777777, 'mercywilliamson@gmail.com');
+INSERT INTO Pessoa VALUES (888888888, 'Quinn Cousins', '2005-01-31', 938888888, 'quinncousins2gmail.com');
+INSERT INTO Pessoa VALUES (999999999, 'Chloe-Louise Garner', '2003-11-13', 939999999, 'chloelouisegarner@gmail.com');
+INSERT INTO Pessoa VALUES (111111112, 'Mariella Morales', '1935-07-20', 911111111, 'mariellamorales@gmail.com');
 INSERT INTO Pessoa VALUES (111111113, 'Moesha Adkins', '1999-03-12', 912222222, 'moeshaadkins@gmail.com');
 INSERT INTO Pessoa VALUES (111111114, 'Hadi Booth', '1965-02-28', 913333333, 'hadibooth@gmail.com'); 
-INSERT INTO Pessoa VALUES (111111115, 'Jessica Herring', '1969-01-31', 914444444, 'jessicaherring@gmail.com'); 
+INSERT INTO Pessoa VALUES (111111115, 'Jessica Herring', '1944-01-31', 914444444, 'jessicaherring@gmail.com'); 
 INSERT INTO Pessoa VALUES (111111116, 'Shani Weir', '1996-07-01', 915555555, 'shaniweir@gmail.com'); 
 INSERT INTo Pessoa VALUES (111111117, 'Darcie Tillman', '1990-04-15', 916666666, 'darcietillman@gmailcom');
 INSERT INTO Pessoa VALUES (111111118, 'Robbie Meyers', '1988-06-18', 917777777, 'robbiemeyers@gmail.com');
@@ -439,6 +439,7 @@ INSERT INTO Produto VALUES (14, 'Relogio Ice Fantasia', 90, 89.00, 4, 8);
 INSERT INTO Produto VALUES (15, 'Brincos Blush', 15, 119.00, 4, 8);
 INSERT INTO Produto VALUES (16, 'Leite', 200, 0.5, 11, 9);
 INSERT INTO Produto VALUES (17, 'Massa', 130, 0.3, 12, 9);
+INSERT INTO Produto VALUES (18, 'Peito de Frango 2000g', 8, 6, 5, 9);
 
 --Compras
 INSERT INTO Compra VALUES (1, '20-01-03', '11:30:05', 41.98, 666666666);
