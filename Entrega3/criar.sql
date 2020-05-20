@@ -41,7 +41,7 @@ CREATE TABLE Loja (
     idGerente INTEGER,
     CONSTRAINT loja_pk PRIMARY KEY (idLoja),
     CONSTRAINT loja_piso_fk FOREIGN KEY (idPiso) REFERENCES Piso (idPiso) ON DELETE SET NULL ON UPDATE CASCADE,
-    CONSTRAINT loja_gerente_fk FOREIGN KEY (idGerente) REFERENCES Funcionario (idFunc) ON DELETE SET NULL ON UPDATE CASCADE
+    CONSTRAINT loja_gerente_fk FOREIGN KEY (idGerente) REFERENCES Funcionario (nif) ON DELETE SET NULL ON UPDATE CASCADE
 );
 
 
@@ -139,10 +139,10 @@ CREATE TABLE Horario (
 DROP TABLE IF EXISTS HorarioFunc;
 
 CREATE TABLE HorarioFunc (
-    idFunc INTEGER,
+    nif INTEGER,
     idHorario INTEGER,
-    CONSTRAINT horariofunc_pk PRIMARY KEY (idFunc, idHorario),
-    CONSTRAINT horariofunc_func_fk FOREIGN KEY (idFunc) REFERENCES Funcionario (idFunc) ON DELETE SET NULL ON UPDATE CASCADE,
+    CONSTRAINT horariofunc_pk PRIMARY KEY (nif, idHorario),
+    CONSTRAINT horariofunc_func_fk FOREIGN KEY (nif) REFERENCES Funcionario (nif) ON DELETE SET NULL ON UPDATE CASCADE,
     CONSTRAINT horariofunc_horario_fk FOREIGN KEY (idHorario) REFERENCES Horario (idHorario) ON DELETE SET NULL ON UPDATE CASCADE
 );
 
@@ -182,10 +182,9 @@ CREATE TABLE Cliente (
 DROP TABLE IF EXISTS Funcionario;
 
 CREATE TABLE Funcionario (
-    idFunc INTEGER,
-    nif INTEGER UNIQUE,
+    nif INTEGER,
     salario REAL NOT NULL,
-    CONSTRAINT func_pk PRIMARY KEY (idFunc),
+    CONSTRAINT func_pk PRIMARY KEY (nif),
     CONSTRAINT func_nif_fk FOREIGN KEY (nif) REFERENCES Pessoa (nif) ON DELETE CASCADE ON UPDATE CASCADE,
     CONSTRAINT func_salario_check CHECK (salario > 0)
 );
@@ -194,10 +193,10 @@ CREATE TABLE Funcionario (
 DROP TABLE IF EXISTS EmpregadoLoja;
 
 CREATE TABLE EmpregadoLoja (
-    idFunc INTEGER,
+    nif INTEGER,
     idLoja INTEGER,
-    CONSTRAINT emploja_pk PRIMARY KEY (idFunc, idLoja),
-    CONSTRAINT emploja_func_fk FOREIGN KEY (idFunc) REFERENCES Funcionario (idFunc) ON DELETE CASCADE ON UPDATE CASCADE,
+    CONSTRAINT emploja_pk PRIMARY KEY (nif),
+    CONSTRAINT emploja_func_fk FOREIGN KEY (nif) REFERENCES Funcionario (nif) ON DELETE CASCADE ON UPDATE CASCADE,
     CONSTRAINT emploja_loja_fk FOREIGN KEY (idLoja) REFERENCES Loja (idLoja) ON DELETE SET NULL ON UPDATE CASCADE
 );
 
@@ -205,10 +204,10 @@ CREATE TABLE EmpregadoLoja (
 DROP TABLE IF EXISTS Seguranca;
 
 CREATE TABLE Seguranca (
-    idFunc INTEGER,
+    nif INTEGER,
     idPiso INTEGER,
-    CONSTRAINT seg_pk PRIMARY KEY (idFunc, idPiso),
-    CONSTRAINT seg_func_fk FOREIGN KEY (idFunc) REFERENCES Funcionario (idFunc) ON DELETE CASCADE ON UPDATE CASCADE,
+    CONSTRAINT seg_pk PRIMARY KEY (nif),
+    CONSTRAINT seg_func_fk FOREIGN KEY (nif) REFERENCES Funcionario (nif) ON DELETE CASCADE ON UPDATE CASCADE,
     CONSTRAINT seg_piso_fk FOREIGN KEY (idPiso) REFERENCES Piso (idPiso) ON DELETE SET NULL ON UPDATE CASCADE
 );
 
@@ -216,9 +215,9 @@ CREATE TABLE Seguranca (
 DROP TABLE IF EXISTS Limpeza;
 
 CREATE TABLE Limpeza (
-    idFunc INTEGER,
+    nif INTEGER,
     idPiso INTEGER,
-    CONSTRAINT limp_pk PRIMARY KEY (idFunc, idPiso),
-    CONSTRAINT limp_func_fk FOREIGN KEY (idFunc) REFERENCES Funcionario (idFunc) ON DELETE SET NULL ON UPDATE CASCADE,
+    CONSTRAINT limp_pk PRIMARY KEY (nif),
+    CONSTRAINT limp_func_fk FOREIGN KEY (nif) REFERENCES Funcionario (nif) ON DELETE SET NULL ON UPDATE CASCADE,
     CONSTRAINT limp_piso_fk FOREIGN KEY (idPiso) REFERENCES Piso (idPiso) ON DELETE SET NULL ON UPDATE CASCADE
 );
