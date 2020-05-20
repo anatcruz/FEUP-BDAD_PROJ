@@ -108,10 +108,13 @@ CREATE TABLE Compra (
 DROP TABLE IF EXISTS Efetuado;
 
 CREATE TABLE Efetuado (
+	idEfetuado INTEGER,
     idCompra INTEGER,
     idProduto INTEGER,
   	quantidade INTEGER NOT NULL,
-    CONSTRAINT efetuado_pk PRIMARY KEY (idCompra, idProduto),
+  	CONSTRAINT efetuado_pk PRIMARY key (idEfetuado),
+    CONSTRAINT pair_unique UNIQUE (idCompra, idProduto),
+  	CONSTRAINT efetuado_quantidade_check CHECK (quantidade > 0),
     CONSTRAINT efetuado_compra_fk FOREIGN KEY (idCompra) REFERENCES Compra (idCompra) ON DELETE SET NULL ON UPDATE CASCADE,
     CONSTRAINT efetuado_produto_fk FOREIGN KEY (idProduto) REFERENCES Produto (idProduto) ON DELETE SET NULL ON UPDATE CASCADE
 );
