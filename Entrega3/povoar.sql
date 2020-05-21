@@ -139,6 +139,7 @@ INSERT INTO Horario VALUES (28, 'DOMINGO', '14:00:00', '24:00:00');
 
 --Horarios dos funcionarios
 INSERT INTO HorarioFunc VALUES (111111111, 1);
+INSERT into HorarioFunc values (111111111, 6);
 INSERT INTO HorarioFunc VALUES (444444444, 8);
 INSERT INTO HorarioFunc VALUES (111111118, 8);
 INSERT INTO HorarioFunc VALUES (111111113, 1);
@@ -350,7 +351,7 @@ INSERT INTO HorarioLoja VALUES (9, 12);
 INSERT INTO HorarioLoja VALUES (9, 13);
 INSERT INTO HorarioLoja VALUES (9, 14);
 
---Empregados de Loja
+--Gerentes de Loja
 INSERT into EmpregadoLoja VALUES (111111111, 1);
 INSERT INTO EmpregadoLoja VALUES (444444444, 2);
 INSERT INTO EmpregadoLoja VALUES (111111118, 3);
@@ -360,6 +361,8 @@ INSERT INTO EmpregadoLoja VALUES (111111114, 6);
 INSERT INTO EmpregadoLoja VALUES (222222224, 7);
 INSERT INTO EmpregadoLoja VALUES (111111117, 8);
 INSERT INTO EmpregadoLoja VALUES (222222223, 9);
+
+--Empregados de Loja
 INSERT into EmpregadoLoja VALUES (222222226, 1);
 INSERT into EmpregadoLoja VALUES (222222227, 1);
 INSERT into EmpregadoLoja VALUES (222222228, 2);
