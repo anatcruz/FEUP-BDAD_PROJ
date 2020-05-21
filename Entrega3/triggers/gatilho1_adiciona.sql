@@ -1,3 +1,5 @@
+-- Verifica se os Funcionários têm a idade mínima de 18 anos. 
+
 .mode columns
 .header on
 .nullvalue NULL
