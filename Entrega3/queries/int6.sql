@@ -6,4 +6,4 @@
 
 SELECT idloja, idgerente, diasemana, horainicio, horafim
 FROM Loja NATURAL JOIN Funcionario NATURAL JOIN HorarioFunc NATURAL JOIN Horario
-WHERE idgerente = nif
+WHERE idgerente = nif;
