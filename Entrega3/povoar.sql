@@ -40,6 +40,13 @@ INSERT into Pessoa VALUES (444444443, 'Cinar Ayala', '1998-10-01', 921111111, 'c
 INSERT into Pessoa VALUES (444444445, 'Faraz Smyth', '1999-11-06', 922222222, 'farazsmyth@gmail.com');
 INSERT into Pessoa VALUES (444444446, 'Emil Schaefer', '1980-09-09', 923333333, 'emilschaefer@gmail.com');
 INSERT into Pessoa VALUES (444444447, 'Sanaa Lara', '1978-03-03', 924444444, 'sanaalara@gmail.com');
+INSERT INTO Pessoa VALUES (555555551, 'Pamela Hagan', '1990-09-12', 925555555, 'pamelahagan@sapo.pt');
+INSERT into Pessoa values (555555552, 'Inigo Goodman', '1964-12-31', 926666666, 'inigogoodman@sapo.pt');
+insert into Pessoa VALUES (555555553, 'Edmund Emery', '1985-04-19', 927777777, 'edmundemery@gmail.com');
+insert into Pessoa values (555555554, 'Brody Dupont', '1955-11-14', 928888888, 'brodydupont@sapo.pt');
+insert INTO Pessoa values (555555556, 'Aleksandra Crowther', '1980-07-05', 929999999, 'aleksandracrowther@sapo.pt');
+insert into Pessoa values (555555557, 'Joshua Evans', '1974-04-15', 921111112, 'joshuaevans@gmail.com');
+                           
                            
 --Clientes
 INSERT INTO Cliente VALUES (666666666);
@@ -83,7 +90,12 @@ INSERT into Funcionario VALUES (444444443, 900);
 INSERT into Funcionario VALUES (444444445, 900);
 INSERT into Funcionario VALUES (444444446, 900);
 INSERT into Funcionario VALUES (444444447, 900);
-
+insert into Funcionario VALUES (555555551, 875);
+insert into Funcionario VALUES (555555552, 875);
+insert into Funcionario VALUES (555555553, 875);
+insert into Funcionario VALUES (555555554, 875);
+insert into Funcionario VALUES (555555556, 875);
+insert into Funcionario VALUES (555555557, 875);
 
 --Centro Comercial e sua Localizacao
 INSERT INTO Localizacao VALUES (1, 'Rua Sara Afonso', 'Senhora da Hora', '4460-841');
@@ -96,8 +108,15 @@ INSERT INTO Piso VALUES (3, 1);
 
 --Seguranca
 INSERT INTO Seguranca VALUES (333333333, 1);
+INSERt into Seguranca VALUES (555555551, 1);
+insert INTO Seguranca VALUES (555555552, 1);
 INSERT INTO Seguranca VALUES (555555555, 2);
+insert into Seguranca values (555555553, 2);
+insert into Seguranca VALUES (555555554, 2);
+insert into Seguranca VALUES (555555556, 3);
+insert into Seguranca values (555555557, 3);
 INSERT into Seguranca VALUES (222222225, 3);
+
 
 --Limpeza
 INSERT into Limpeza VALUES (111111119, 1);
@@ -137,17 +156,21 @@ INSERT INTO Horario VALUES (26, 'SEXTA-FEIRA', '14:00:00', '24:00:00');
 INSERT INTO Horario VALUES (27, 'SABADO', '14:00:00', '24:00:00');
 INSERT INTO Horario VALUES (28, 'DOMINGO', '14:00:00', '24:00:00');
 
---Horarios dos funcionarios
-INSERT INTO HorarioFunc VALUES (111111111, 1);
-INSERT into HorarioFunc values (111111111, 6);
-INSERT INTO HorarioFunc VALUES (444444444, 8);
-INSERT INTO HorarioFunc VALUES (111111118, 8);
-INSERT INTO HorarioFunc VALUES (111111113, 1);
-INSERT INTO HorarioFunc VALUES (222222221, 1);
-INSERT INTO HorarioFunc VALUES (111111114, 1);
-INSERT INTO HorarioFunc VALUES (222222224, 1);
-INSERT INTO HorarioFunc VALUES (111111117, 1);
-INSERT INTO HorarioFunc VALUES (222222223, 8);
+--Horarios dos Gerentes
+INSERT INTO HorarioFunc VALUES (111111111, 15);
+INSERT into HorarioFunc values (111111111, 20);
+INSERT INTO HorarioFunc VALUES (444444444, 23);
+INSERT INTO HorarioFunc VALUES (111111118, 25);
+insert into HorarioFunc Values (111111118, 27);
+INSERT INTO HorarioFunc VALUES (111111113, 19);
+INSERT INTO HorarioFunc VALUES (222222221, 21);
+INSERT INTO HorarioFunc VALUES (111111114, 23);
+insert into HorarioFunc VALUES (111111114, 24);
+INSERT INTO HorarioFunc VALUES (222222224, 15);
+insert into HorarioFunc Values (222222224, 27);
+INSERT INTO HorarioFunc VALUES (111111117, 26);
+INSERT INTO HorarioFunc VALUES (222222223, 21);
+--Horarios dos Empregados de Loja
 INSERT INTO HorarioFunc VALUES (222222226, 15);
 INSERT INTO HorarioFunc VALUES (222222226, 16);
 INSERT INTO HorarioFunc VALUES (222222226, 17);
@@ -274,6 +297,52 @@ INSERT INTO HorarioFunc VALUES (444444447, 25);
 INSERT INTO HorarioFunc VALUES (444444447, 26);
 INSERT INTO HorarioFunc VALUES (444444447, 27);
 INSERT INTO HorarioFunc VALUES (444444447, 28);
+
+--Horarios dos Segurancas
+--Piso 1
+insert into HorarioFunc VALUES (333333333, 15);
+insert into HorarioFunc VALUES (333333333, 23);
+insert into HorarioFunc VALUES (333333333, 24);
+insert into HorarioFunc VALUES (333333333, 19);
+insert into HorarioFunc VALUES (333333333, 27);
+INSERT INTO HorarioFunc values (555555551, 16);
+INSERT INTO HorarioFunc values (555555551, 17);
+INSERT INTO HorarioFunc values (555555551, 18);
+INSERT INTO HorarioFunc values (555555551, 21);
+insert into HorarioFunc values (555555552, 22);
+insert into HorarioFunc values (555555552, 25);
+insert into HorarioFunc values (555555552, 26);
+insert into HorarioFunc values (555555552, 20);
+--Piso 2
+insert into HorarioFunc values (555555555, 22);
+insert into HorarioFunc values (555555555, 23);
+insert into HorarioFunc values (555555555, 24);
+insert into HorarioFunc values (555555555, 26);
+insert into HorarioFunc values (555555555, 27);
+insert into HorarioFunc values (555555555, 28);
+insert into HorarioFunc VALUES (555555553, 15);
+insert into HorarioFunc VALUES (555555553, 19);
+insert into HorarioFunc VALUES (555555553, 25);
+insert into HorarioFunc values (555555554, 16);
+insert into HorarioFunc values (555555554, 17);
+insert into HorarioFunc values (555555554, 18);
+insert into HorarioFunc values (555555554, 20);
+insert into HorarioFunc values (555555554, 21);
+--Piso 3
+insert into HorarioFunc values (555555556, 16);
+insert into HorarioFunc values (555555556, 17);
+insert into HorarioFunc values (555555556, 18);
+insert into HorarioFunc values (555555556, 20);
+insert into HorarioFunc values (555555557, 15);
+insert INTO HorarioFunc values (555555557, 19);
+insert into HorarioFunc values (555555557, 26);
+insert into HorarioFunc values (555555557, 27);
+insert into HorarioFunc values (555555557, 28);
+insert INTO HorarioFunc values (222222225, 22);
+insert INTO HorarioFunc values (222222225, 23);
+insert INTO HorarioFunc values (222222225, 24);
+insert INTO HorarioFunc values (222222225, 25);
+insert INTO HorarioFunc values (222222225, 21);
 
 --Lojas
 INSERT INTO Loja VALUES (1, 'Primark', 1, 111111111);
