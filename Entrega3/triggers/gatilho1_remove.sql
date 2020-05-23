@@ -1,7 +1,3 @@
-.mode columns
-.header on
-.nullvalue NULL
-
-PRAGMA foreign_keys = ON;
+-- Verifica se os Funcionários têm a idade mínima de 18 anos. 
 
 DROP TRIGGER IF EXISTS InsertIdadeValida;
