@@ -4,10 +4,10 @@
 .headers on
 .nullvalue NULL
 
-SELECT idloja, sum(total) AS Total_Compras, Loja.nome
+SELECT idloja, sum(total) AS Total_Vendas, Loja.nome
 FROM
 (SELECT idcompra, idproduto, idloja, total
 FROM (Efetuado JOIN Produto USING (idproduto)) NATURAL JOIN Compra
 GROUP BY idcompra) NATURAL JOIN Loja
 GROUP BY idloja
-ORDER BY Total_Compras DESC;
+ORDER BY Total_Vendas DESC;
