@@ -4,7 +4,7 @@
 .headers on
 .nullvalue NULL
 
-CREATE VIEW FuncLojas
+CREATE VIEW IF NOT EXISTS FuncLojas
 AS
     SELECT DISTINCT idPiso, idLoja, nome, count(nif) as numFunc
     FROM EmpregadoLoja NATURAL JOIN Loja
