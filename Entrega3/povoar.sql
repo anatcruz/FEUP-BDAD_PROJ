@@ -6,7 +6,7 @@ INSERT INTO Pessoa VALUES (222222222, 'Kia Dunlap', '1990-12-25', 932222222, 'ki
 INSERT INTO Pessoa VALUES (333333333, 'Renzo Hodge', '1966-03-13', 933333333, 'renzohodge@gmail.com');
 INSERT INTO Pessoa VALUES (444444444, 'Margaret Dixon', '1978-10-03', 934444444, 'margaretdixon@gmail.com');
 INSERT INTO Pessoa VALUES (555555555, 'Aiysha Beil', '1969-02-28', 935555555, 'aiyshabeil@gmail.com');
-INSERT INTO Pessoa VALUES (666666666, 'Kaine Hudson', '1930-05-12', 936666666, 'kainehudson@gmail.com');
+INSERT INTO Pessoa VALUES (666666666, 'Kaine Hudson', '1980-05-12', 936666666, 'kainehudson@gmail.com');
 INSERT INTO Pessoa VALUES (777777777, 'Mercy Williamson', '1942-07-21', 937777777, 'mercywilliamson@gmail.com');
 INSERT INTO Pessoa VALUES (888888888, 'Quinn Cousins', '2005-01-31', 938888888, 'quinncousins2gmail.com');
 INSERT INTO Pessoa VALUES (999999999, 'Chloe-Louise Garner', '2003-11-13', 939999999, 'chloelouisegarner@gmail.com');
@@ -46,6 +46,17 @@ insert into Pessoa VALUES (555555553, 'Edmund Emery', '1985-04-19', 927777777, '
 insert into Pessoa values (555555554, 'Brody Dupont', '1955-11-14', 928888888, 'brodydupont@sapo.pt');
 insert INTO Pessoa values (555555556, 'Aleksandra Crowther', '1980-07-05', 929999999, 'aleksandracrowther@sapo.pt');
 insert into Pessoa values (555555557, 'Joshua Evans', '1974-04-15', 921111112, 'joshuaevans@gmail.com');
+
+insert into Pessoa values (555555558, 'Eben Cash', '1980-09-20', 921111113, 'ebencash@gmail.com');
+insert into Pessoa values (555555559, 'Emmanuel Robbins', '1976-09-20', 921111114, 'emmanuelrobbins@gmail.com');
+insert into Pessoa values (666666660, 'Montgomery Gomez', '1980-09-20', 921111115, 'montgomerygomez@gmail.com');
+insert into Pessoa values (666666661, 'Ronnie Drummond', '1980-09-20', 921111116, 'ronniedrummond@gmail.com');
+insert into Pessoa values (666666662, 'Wade Willis', '1980-09-20', 921111117, 'wadewillis@gmail.com');
+insert into Pessoa values (666666663, 'Ananya Bowler', '1980-09-20', 921111118, 'ananyabowler@gmail.com');
+insert into Pessoa values (666666664, 'Jeanne Arellano', '1980-09-20', 921111119, 'jeannearellano@gmail.com');
+insert into Pessoa values (666666665, 'Hafsah Whitmore', '1980-09-20', 921111121, 'Hafsah Whitmore@gmail.com');
+insert into Pessoa values (666666667, 'Gemma Baird', '1980-09-20', 921111123, 'gemmabaird@gmail.com');
+insert into Pessoa values (666666668, 'Dennis Jaramillo', '1980-09-20', 921111124, 'dennisjaramillo@gmail.com');
                            
                            
 --Clientes
@@ -96,6 +107,17 @@ insert into Funcionario VALUES (555555553, 875);
 insert into Funcionario VALUES (555555554, 875);
 insert into Funcionario VALUES (555555556, 875);
 insert into Funcionario VALUES (555555557, 875);
+
+insert into Funcionario VALUES (555555558, 900);
+insert into Funcionario VALUES (555555559, 900);
+insert into Funcionario VALUES (666666660, 900);
+insert into Funcionario VALUES (666666661, 900);
+insert into Funcionario VALUES (666666662, 900);
+insert into Funcionario VALUES (666666663, 900);
+insert into Funcionario VALUES (666666664, 900);
+insert into Funcionario VALUES (666666665, 900);
+insert into Funcionario VALUES (666666667, 900);
+insert into Funcionario VALUES (666666668, 900);
 
 --Centro Comercial e sua Localizacao
 INSERT INTO Localizacao VALUES (1, 'Rua Sara Afonso', 'Senhora da Hora', '4460-841');
@@ -170,6 +192,7 @@ INSERT INTO HorarioFunc VALUES (222222224, 15);
 insert into HorarioFunc Values (222222224, 27);
 INSERT INTO HorarioFunc VALUES (111111117, 26);
 INSERT INTO HorarioFunc VALUES (222222223, 21);
+
 --Horarios dos Empregados de Loja
 INSERT INTO HorarioFunc VALUES (222222226, 15);
 INSERT INTO HorarioFunc VALUES (222222226, 16);
@@ -297,6 +320,27 @@ INSERT INTO HorarioFunc VALUES (444444447, 25);
 INSERT INTO HorarioFunc VALUES (444444447, 26);
 INSERT INTO HorarioFunc VALUES (444444447, 27);
 INSERT INTO HorarioFunc VALUES (444444447, 28);
+
+INSERT INTO HorarioFunc VALUES (555555558, 27);
+INSERT INTO HorarioFunc VALUES (555555559, 27);
+INSERT INTO HorarioFunc VALUES (666666660, 27);
+INSERT INTO HorarioFunc VALUES (666666661, 27);
+INSERT INTO HorarioFunc VALUES (666666662, 27);
+INSERT INTO HorarioFunc VALUES (666666663, 27);
+INSERT INTO HorarioFunc VALUES (666666664, 27);
+INSERT INTO HorarioFunc VALUES (666666665, 27);
+INSERT INTO HorarioFunc VALUES (666666667, 27);
+INSERT INTO HorarioFunc VALUES (666666668, 27);
+INSERT INTO HorarioFunc VALUES (555555558, 28);
+INSERT INTO HorarioFunc VALUES (555555559, 28);
+INSERT INTO HorarioFunc VALUES (666666660, 28);
+INSERT INTO HorarioFunc VALUES (666666661, 28);
+INSERT INTO HorarioFunc VALUES (666666662, 28);
+INSERT INTO HorarioFunc VALUES (666666663, 28);
+INSERT INTO HorarioFunc VALUES (666666664, 28);
+INSERT INTO HorarioFunc VALUES (666666665, 28);
+INSERT INTO HorarioFunc VALUES (666666667, 28);
+INSERT INTO HorarioFunc VALUES (666666668, 28);
 
 --Horarios dos Segurancas
 --Piso 1
@@ -434,22 +478,32 @@ INSERT INTO EmpregadoLoja VALUES (222222223, 9);
 --Empregados de Loja
 INSERT into EmpregadoLoja VALUES (222222226, 1);
 INSERT into EmpregadoLoja VALUES (222222227, 1);
+INSERT INTO EmpregadoLoja VALUES (555555558, 1);
+INSERT INTO EmpregadoLoja VALUES (555555559, 1);
 INSERT into EmpregadoLoja VALUES (222222228, 2);
 INSERT into EmpregadoLoja VALUES (222222229, 2);
+INSERT into EmpregadoLoja VALUES (666666660, 2);
+INSERT into EmpregadoLoja VALUES (666666661, 2);
 INSERT INTO EmpregadoLoja VALUES (333333331, 3);
 INSERT INTO EmpregadoLoja VALUES (333333332, 3);
 INSERT INTO EmpregadoLoja VALUES (333333334, 4);
 INSERT INTO EmpregadoLoja VALUES (333333335, 4);
+INSERT INTO EmpregadoLoja VALUES (666666662, 4);
 INSERT INTO EmpregadoLoja VALUES (333333336, 5);
 INSERT INTO EmpregadoLoja VALUES (333333337, 5);
+INSERT INTO EmpregadoLoja VALUES (666666663, 5);
 INSERT INTO EmpregadoLoja VALUES (333333338, 6);
 INSERT INTO EmpregadoLoja VALUES (333333339, 6);
+INSERT INTO EmpregadoLoja VALUES (666666664, 6);
 INSERT INTO EmpregadoLoja VALUES (444444441, 7);
 INSERT INTO EmpregadoLoja VALUES (444444442, 7);
+INSERT INTO EmpregadoLoja VALUES (666666665, 7);
 INSERT INTO EmpregadoLoja VALUES (444444443, 8);
 INSERT INTO EmpregadoLoja VALUES (444444445, 8);
 INSERT INTO EmpregadoLoja VALUES (444444446, 9);
 INSERT INTO EmpregadoLoja VALUES (444444447, 9);
+INSERT INTO EmpregadoLoja VALUES (666666667, 9);
+INSERT INTO EmpregadoLoja VALUES (666666668, 9);
 
 --Categorias
 INSERT INTO Categoria VALUES (1, 'Acessorios de Moda');
