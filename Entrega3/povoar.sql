@@ -524,6 +524,12 @@ INSERT INTO Compra VALUES (7, '2020-01-03', '15:36:16', 4.75, 666666666);
 INSERT INTO Compra VALUES (8, '2020-03-25', '16:11:15', 36.99, 777777777);
 INSERT INTO Compra VALUES (9, '2020-02-02', '20:35:12', 50.85, 888888888);
 INSERT INTO Compra VALUES (10, '2020-03-01', '22:35:15', 4.75, 999999999);
+INSERT into Compra VALUES (11, '2020-01-14', '15:34:13', 54.48, 666666666);
+insert into Compra VALUES (12, '2020-05-25', '12:45:50', 19.99, 777777777);
+INSERT into Compra VALUES (13, '2020-04-13', '10:46:45', 137.97, 888888888);
+insert INTO Compra values (14, '2020-03-12', '12:39:56', 6.3, 999999999);
+insert into Compra VALUES (15, '2020-02-17', '17:32:18', 31.86, 111111112);
+insert into Compra VALUES (16, '2020-12-17', '11:32:11', 119, 111111115);
 
 --Efetuado
 INSERT into Efetuado VALUES (1, 1, 1, 2);
@@ -536,3 +542,11 @@ INSERT INTO Efetuado VALUES (7, 7, 3, 1);
 INSERT INTO Efetuado VALUES (8, 8, 8, 1);
 INSERT INTO Efetuado VALUES (9, 9, 5, 3);
 INSERT INTO Efetuado VALUES (10, 10, 3, 1);
+INSERT INTO Efetuado VALUES (11, 11, 2, 5);
+INSERT into Efetuado VALUES (12, 11, 1, 2);
+insert into Efetuado VALUES (13, 12, 6, 1);
+insert into Efetuado values (14, 13, 9, 3);
+INSERT into Efetuado values (15, 14, 17, 1);
+insert into Efetuado VALUES (16, 14, 18, 1);
+insert into Efetuado Values (17, 15, 13, 3);
+insert into Efetuado VALUES (18, 16, 15, 1);
