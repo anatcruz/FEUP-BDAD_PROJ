@@ -1,15 +1,15 @@
-
+--Lista as lojas, de cada piso, com menor numero de empregados
 
 .mode columns
 .headers on
 .nullvalue NULL
 
-CREATE VIEW efetuado_produto
+CREATE VIEW IF NOT EXISTS FuncLojas
 AS
-    SELECT idCompra, idLoja
-    FROM Efetuado , Produto
-    WHERE Efetuado.idProduto = Produto.idProduto;
+    SELECT DISTINCT idPiso, idLoja, nome, count(nif) as numFunc
+    FROM EmpregadoLoja NATURAL JOIN Loja
+    GROUP BY idLoja;
 
-SELECT Pessoa.nome, nif, Loja.nome
-FROM Pessoa JOIN (Loja NATURAL JOIN (Compra NATURAL JOIN efetuado_produto)) ON Pessoa.nif=Compra.nifCliente
-ORDER BY Loja.nome;
+SELECT Piso.idPiso, idLoja, nome, min(numFunc) as Num_Func
+FROM Piso JOIN FuncLojas USING (idPiso)
+GROUP BY Piso.idPiso;

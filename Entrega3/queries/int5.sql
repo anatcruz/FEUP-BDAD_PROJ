@@ -4,19 +4,19 @@
 .headers on
 .nullvalue NULL
 
-CREATE VIEW menores_view
+CREATE VIEW IF NOT EXISTS menores_view
 AS
 	SELECT COUNT(nome) AS Numero_Menores
     	FROM  Cliente NATURAL JOIN Pessoa
     	WHERE (DATE('now') - datanascimento) < 18;
     
-CREATE VIEW adultos_view
+CREATE VIEW IF NOT EXISTS adultos_view
 AS
 	SELECT COUNT(nome) AS Numero_Adultos
    	FROM  Cliente NATURAL JOIN Pessoa
     	WHERE (DATE('now') - datanascimento) >= 18 and (DATE('now') - datanascimento) < 64;
 
-CREATE VIEW seniores_view
+CREATE VIEW IF NOT EXISTS seniores_view
 AS
 	SELECT count(nome) AS Numero_Seniores
    	FROM  Cliente NATURAL JOIN Pessoa
