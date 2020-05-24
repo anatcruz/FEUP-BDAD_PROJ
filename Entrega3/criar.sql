@@ -69,7 +69,7 @@ DROP TABLE IF EXISTS Produto;
 
 CREATE TABLE Produto (
     idProduto INTEGER,
-    nome TEXT UNIQUE NOT NULL,
+    nome TEXT NOT NULL,
     quantidade INTEGER NOT NULL,
     preco REAL NOT NULL,
     idTipo INTEGER,
